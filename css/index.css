@@ -1,0 +1,72 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.nav-top{
+    background-color: black;
+    top: 0;
+    margin: 0.5%;
+    padding: 1%;
+    width: 100%;
+    position: sticky;
+    text-align: end;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0.5%;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    display: inline;
+    margin: 2%;
+}
+
+li a{
+    text-align: center;
+    color: blanchedalmond;
+}
+
+a{
+    margin: 0.5%;
+}
+
+main{
+    margin: 5%;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+h1{
+    font-size: 300%;
+    margin: 0.5%;
+    padding: 0.75%;
+}
+
+h2{
+    font-size: 250%;
+    margin: 0.5%;
+    padding: 0.75%;
+}
+
+p{
+    display: block;
+    border-style:solid ;
+    border-color: black;
+    font-size: 125%;
+    margin: 5%;
+    padding: 0.75%;
+}
+
+div{
+    text-align: center;
+    margin: 0;
+    bottom: -1%;
+}
+
+footer{
+    text-align: center;
+    font-style: unset;
+}
