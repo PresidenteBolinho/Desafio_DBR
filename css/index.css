@@ -1,15 +1,21 @@
 html{
     scroll-behavior: smooth;
+    background-color: #f8f8ffff;
 }
 
 .nav-top{
     background-color: black;
     top: 0;
-    margin: 0.5%;
+    margin: 0%;
     padding: 1%;
     width: 100%;
     position: sticky;
     text-align: end;
+}
+
+.nav-top h3{
+    color: blanchedalmond;
+    float: left;
 }
 
 ul{
@@ -39,6 +45,14 @@ main{
     text-align: justify;
 }
 
+section{
+    margin: 20%, 0%;
+}
+
+.Social section div{
+    background-color: #c8c8d4ff;
+}
+
 h1{
     font-size: 300%;
     margin: 0.5%;
@@ -53,11 +67,12 @@ h2{
 
 p{
     display: block;
-    border-style:solid ;
-    border-color: black;
+    background-color: #e7e9f1ff;
     font-size: 125%;
+    border-radius: 10px;
     margin: 5%;
-    padding: 0.75%;
+    padding: 5%;
+    box-shadow: 2px 2px 4px black;
 }
 
 div{
