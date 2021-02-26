@@ -1,87 +1,82 @@
-html{
+html {
     scroll-behavior: smooth;
-    background-color: #f8f8ffff;
 }
 
-.nav-top{
-    background-color: black;
-    top: 0;
-    margin: 0%;
-    padding: 1%;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 32px;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
     width: 100%;
-    position: sticky;
-    text-align: end;
-}
-
-.nav-top h3{
-    color: blanchedalmond;
-    float: left;
-}
-
-ul{
-    list-style-type: none;
-    margin: 0.5%;
     padding: 0;
-    overflow: hidden;
+    position: fixed;
+    background-color: blanchedalmond;
 }
 
-li{
-    display: inline;
-    margin: 2%;
-}
-
-li a{
+nav ul li {
     text-align: center;
-    color: blanchedalmond;
+    width: 100%;
 }
 
-a{
-    margin: 0.5%;
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
 }
 
-main{
-    margin: 5%;
-    font-family: sans-serif;
-    text-align: justify;
+h1, h2, h3 {
+    font-family: 'Akaya Kanadaka', sans-serif;
+    font-size: 32px;
 }
 
-section{
-    margin: 20%, 0%;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.Social section div{
-    background-color: #c8c8d4ff;
-}
-
-h1{
-    font-size: 300%;
-    margin: 0.5%;
-    padding: 0.75%;
-}
-
-h2{
-    font-size: 250%;
-    margin: 0.5%;
-    padding: 0.75%;
-}
-
-p{
-    display: block;
-    background-color: #e7e9f1ff;
-    font-size: 125%;
-    border-radius: 10px;
-    margin: 5%;
-    padding: 5%;
-    box-shadow: 2px 2px 4px black;
-}
-
-div{
+footer {
     text-align: center;
-    margin: 0;
-    bottom: -1%;
+    padding: 10px;
 }
 
-footer{
-    text-align: center;
-    font-style: unset;
+footer a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
 }
