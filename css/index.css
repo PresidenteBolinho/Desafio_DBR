@@ -1,82 +1,68 @@
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+li, a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-nav > a {
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 32px;
+    width: 100%;
+    padding: 30px 10%;
     position: fixed;
+    background-color: black;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+img {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+ul  {
     list-style: none;
-    width: 100%;
-    padding: 0;
-    position: fixed;
-    background-color: blanchedalmond;
 }
 
-nav ul li {
-    text-align: center;
-    width: 100%;
-}
-
-nav ul li a {
+ul li {
     display: inline-block;
-    padding: 10px 0;
-    width: 100%;
-    text-decoration: none;
+    padding: 0px 20px;
 }
 
-h1, h2, h3 {
-    font-family: 'Akaya Kanadaka', sans-serif;
-    font-size: 32px;
+ul li a {
+    transition: all 0.3s ease 0s;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
+ul li a:hover {
+    color: chartreuse;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
+.Presidente_Bolinho {
+    background-color: #f8f8ffff;
 }
 
-footer a {
-    text-decoration: none;
+.Gustavo_Silva {
+    background-color: #f8f8ffff;
 }
 
-@media screen and (min-width: 768px){
-    nav {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    nav ul{
-        flex-direction: row;
-        width: 70%;
-    }
-
-    header {
-        height: 600px;
-        height: 60vh;
-        justify-content: center;
-    }
+.Social{
+    background-color: #f8f8ffff;
 }
