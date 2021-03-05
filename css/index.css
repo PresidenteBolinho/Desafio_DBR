@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     margin: 0;
@@ -7,35 +11,65 @@ html {
 
 body {
     margin: 0;
-    margin-top: 0;
     padding: 0;
 }
 
-* {
-    box-sizing: border-box;
-
-}
-
 li, a {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Akaya Kanadaka", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 24px;
     text-decoration: none;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    padding: 1%;
     width: 100%;
-    padding: 30px 10%;
-    position: fixed;
+    top: 0;
     background-color: black;
+    color: white;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h3 {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header li {
+    /*Para Colocar Os Itens da Lista Em Linha*/
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header + main {
+    margin-top: 10%;
+}
+
+h1 {
+    font-family: "Akaya Kanadaka", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    padding: 0 2%;
+}
+
+h2 {
+    font-family: "Akaya Kanadaka", sans-serif;
+    font-size: 24px;
 }
 
 img {
     cursor: pointer;
-    margin-right: auto;
 }
 
 ul  {
@@ -55,14 +89,27 @@ ul li a:hover {
     color: chartreuse;
 }
 
-.Presidente_Bolinho {
+#Presidente_Bolinho, #Gustavo_Silva, #Social {
     background-color: #f8f8ffff;
+    margin: 5%;
+    padding: 0.75% 1.5%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: 150%;
 }
 
-.Gustavo_Silva {
-    background-color: #f8f8ffff;
+#Social{
+    text-align: center;
 }
 
-.Social{
-    background-color: #f8f8ffff;
+#Social a{
+    padding: 0.75%;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
 }
